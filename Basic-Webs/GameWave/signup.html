@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameWave | Sign Up</title>
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="icon" href="assets/icons/favicon.png" />
+  </head>
+  <body>
+    <div class="auth-box" id="signup-div">
+      <h2>Create Your Account 🎮</h2>
+
+      <input
+        type="text"
+        placeholder="Username"
+        id="signup-username"
+        autocomplete="off"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        id="signup-email"
+        autocomplete="off"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        id="signup-password"
+        autocomplete="off"
+      />
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        id="signup-confirm-password"
+        autocomplete="off"
+      />
+
+      <label>
+        <input type="checkbox" id="signup-terms" />
+        I agree to the&nbsp;<a href="">terms & conditions</a>
+      </label>
+      <p class="error-msg" id="signup-error-msg" style="display: none"></p>
+
+      <button onclick="signup()">Sign Up</button>
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

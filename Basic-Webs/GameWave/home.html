@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameWave | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/assets/icons/favicon.png" />
+    <style>
+      .activeBtn {
+        background: #7371ff !important;
+        color: white !important;
+        border: 2px solid #6aabc0 !important;
+      }
+
+      @media (max-width: 400px) {
+        #search-bar[type="search"] {
+          margin-right: 10px;
+        }
+
+        #main-container {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .filters {
+          width: 100% !important;
+          margin-bottom: 1rem !important;
+          height: auto !important;
+          overflow-y: auto;
+        }
+
+        #game-container {
+          height: 60vh !important;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header/Navbar -->
+    <header>
+      <div id="Brand-nav">
+        <div class="flex" id="Brand">
+          <img src="assets/icons/favicon.png" alt="Logo" />
+          <span class="brand">GameWave</span>
+        </div>
+        <div>
+          <nav class="nav-links wrap">
+            <a href="home.html">Home</a>
+            <a href="store.html">Store</a>
+            <a href="cart.html">Cart</a>
+            <a href="library.html">Library</a>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <input
+          type="search"
+          id="search-bar"
+          placeholder="Search for games..."
+          autocomplete="off"
+        />
+        <button onclick="Logout()" id="LogBtn">Log Out</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="main-container">
+        <section id="game-container"></section>
+
+        <!-- Filters -->
+        <div class="filters">
+          <!-- Price Filter -->
+          <select onchange="filter()" id="priceSelection">
+            <option value="all">All Prices</option>
+            <option value="50">Under $50</option>
+            <option value="40">Under $40</option>
+            <option value="30">Under $30</option>
+            <option value="20">Under $20</option>
+            <option value="0">Free</option>
+          </select>
+
+          <!-- Genre Filter -->
+          <button id="genreFilter">All Genres &nbsp;&nbsp;&nbsp;&nbsp;⌄</button>
+          <div id="genre">
+            <button class="genreBtns" id="Adventure">Adventure</button>
+            <button class="genreBtns" id="Strategy">Strategy</button>
+            <button class="genreBtns" id="Shooter">Shooter</button>
+            <button class="genreBtns" id="Action">Action</button>
+            <button class="genreBtns" id="Puzzle">Puzzle</button>
+            <button class="genreBtns" id="RPG">RPG</button>
+            <button class="genreBtns" id="Survival">Survival</button>
+            <button class="genreBtns" id="Simulation">Simulation</button>
+            <button class="genreBtns" id="Horror">Horror</button>
+            <button class="genreBtns" id="Sci-Fi">Sci-Fi</button>
+            <button class="genreBtns" id="Stealth">Stealth</button>
+          </div>
+
+          <!-- Platforms Filter -->
+          <button id="platformFilter">All Platforms &nbsp;&nbsp;⌄</button>
+          <div id="platform">
+            <button class="PlatformBtns" id="Linux">Linux</button>
+            <button class="PlatformBtns" id="Windows">Windows</button>
+            <button class="PlatformBtns" id="Mac">Mac</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- Logo & Description -->
+        <div class="footer-section">
+          <h2>GameWave</h2>
+          <p>Your ultimate destination for premium and indie games.</p>
+        </div>
+
+        <!-- About or Info -->
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>&copy; 2025 GameWave. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/home.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

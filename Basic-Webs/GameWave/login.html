@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameWave | Login</title>
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="icon" href="assets/icons/favicon.png" />
+  </head>
+  <body>
+    <div class="auth-box" id="signup-div">
+      <h2>GameWave 🔓</h2>
+      <input
+        type="email"
+        placeholder="Email"
+        autocomplete="off"
+        id="login-email"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        autocomplete="off"
+        id="login-password"
+      />
+      <p class="error-msg" id="login-error-msg" style="display: none"></p>
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>
