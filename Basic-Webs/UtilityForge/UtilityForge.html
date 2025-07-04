@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UtilityForge</title>
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/057/438/843/non_2x/vibrant-rustic-green-energy-icon-set-colorful-transparent-background-premium-png.png"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        color: white;
+        height: 10vh;
+      }
+      footer {
+        font-size: larger;
+        font-weight: 700;
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .logo {
+        font-size: 1.4em;
+        font-weight: 600;
+      }
+      header img {
+        height: 8vh;
+        margin: auto 2vw auto 3vw;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav a {
+        display: inline;
+        text-decoration: none;
+        color: white;
+        padding: 1vw;
+        font-size: 2em;
+        font-weight: 600;
+        transition: transform 0.1s ease-in-out;
+      }
+      header .nav a:hover {
+        transform: scale3D(1.2, 1.7, 2.7);
+      }
+
+      @media (max-width: 515px) {
+        .nav a {
+          font-size: 1.5em;
+        }
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media (max-width: 515px) {
+        .nav a {
+          font-size: 1.2em;
+        }
+        header .logo {
+          font-size: 1.2em;
+        }
+      }
+      .currency-convertor-box,
+      .age-calculator {
+        width: 60vw;
+        min-height: 60vh;
+        height: auto;
+        border-radius: 20px;
+        border: 2px solid black;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        margin: 5vh auto;
+      }
+      h3 {
+        font-size: 2.2em;
+        font-weight: 700;
+        color: rgb(19, 29, 51);
+        padding: 0.4vw;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5vh;
+      }
+      h3 img {
+        height: 8vh;
+        margin-left: 2vw;
+        margin-top: 1vh;
+      }
+      h3 span {
+        color: black;
+        box-shadow: #24243e;
+        font-weight: 800;
+      }
+      h3 p {
+        text-align: center;
+      }
+
+      @media (max-width: 645px) {
+        h3 {
+          font-size: 1.8em;
+        }
+      }
+      @media (max-width: 545px) {
+        h3 {
+          font-size: 1.5em;
+        }
+        h3 img {
+          height: 6vh;
+        }
+      }
+      @media (max-width: 445px) {
+        h3 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      input,
+      select {
+        border: 2px solid #302b63;
+        border-radius: 10px;
+        background-color: #f5f7fa;
+        color: #24243e;
+        outline: none;
+        font-size: 3vh;
+        height: 5vh;
+      }
+      input {
+        width: 10vw;
+        padding-left: 2px;
+      }
+
+      select {
+        width: 20vw;
+      }
+
+      hr {
+        width: 0;
+        height: 4vh;
+        margin: 2vh;
+      }
+      .one,
+      .two {
+        width: 35vw;
+        height: 7vh;
+        margin: 3vh 10vw;
+        border: black solid 2px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px #302b63;
+      }
+      .small-para {
+        font-size: x-large;
+        font-weight: 600;
+        margin-left: 5vw;
+      }
+      @media (max-width: 670px) {
+        hr {
+          display: none;
+        }
+        input,
+        select {
+          border: 1px solid black;
+          border-radius: 4px;
+          width: 30vw;
+          margin: 5px;
+        }
+        .one,
+        .two {
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .display {
+        font-size: 2em;
+        text-align: center;
+        color: #0f0c29;
+        font-weight: bold;
+        padding: 1vh;
+      }
+    </style>
+    <style>
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+      .dob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 20vh;
+        margin: 3vh auto;
+        border: black solid 2px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px #302b63;
+      }
+      #inputDOB {
+        width: 180px;
+      }
+      @media (max-width: 400px) {
+        .dob {
+          border: none;
+          box-shadow: none;
+          width: auto;
+        }
+        #inputDOB {
+          width: 150px;
+          font-size: 2.37vh;
+        }
+      }
+      #CalculateDOB {
+        width: 150px;
+        height: 5vh;
+        margin-top: 2vh;
+        border-radius: 12px;
+        border: none;
+        background: linear-gradient(135deg, #cfdef3, #42a5f5);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        color: #24243e;
+        outline: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+      }
+
+      #CalculateDOB:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      #CalculateDOB:active {
+        transform: scale(0.96);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      ul {
+        list-style-type: none;
+        color: #252627;
+        font-weight: 500;
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo flex">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/057/438/843/non_2x/vibrant-rustic-green-energy-icon-set-colorful-transparent-background-premium-png.png"
+          alt=" "
+        />UtilityForge
+      </div>
+      <div class="nav flex">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <main>
+      <div class="currency-convertor-box">
+        <h3>
+          <img
+            src="https://play-lh.googleusercontent.com/iAxb331VCggU8sv_GlD9SS5ZJdril4EO4K52m_H1oDQwKIFX21lJKSc__sTO4nFYNO8"
+            alt=" "
+          />
+          <p>&nbsp;Wellcome to your <span>Currency Convertor</span></p>
+        </h3>
+        <label for="fromAmount" class="small-para">From:</label>
+        <div class="one flex">
+          <input type="text" id="fromAmount" autocomplete="off" />
+          <hr />
+          <select id="fromCurrency">
+            <option value="usd">US Dollar (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="gbp">British Pound (GBP)</option>
+            <option value="inr">Indian Rupee (INR)</option>
+            <option value="jpy">Japanese Yen (JPY)</option>
+            <option value="cny">Chinese Yuan (CNY)</option>
+            <option value="cad">Canadian Dollar (CAD)</option>
+            <option value="aud">Australian Dollar (AUD)</option>
+            <option value="chf">Swiss Franc (CHF)</option>
+            <option value="aed">UAE Dirham (AED)</option>
+            <option value="sgd">Singapore Dollar (SGD)</option>
+            <option value="nzd">New Zealand Dollar (NZD)</option>
+            <option value="hkd">Hong Kong Dollar (HKD)</option>
+            <option value="sek">Swedish Krona (SEK)</option>
+            <option value="nok">Norwegian Krone (NOK)</option>
+            <option value="dkk">Danish Krone (DKK)</option>
+            <option value="zar">South African Rand (ZAR)</option>
+            <option value="rub">Russian Ruble (RUB)</option>
+            <option value="brl">Brazilian Real (BRL)</option>
+            <option value="mxn">Mexican Peso (MXN)</option>
+            <option value="krw">South Korean Won (KRW)</option>
+            <option value="thb">Thai Baht (THB)</option>
+            <option value="myr">Malaysian Ringgit (MYR)</option>
+            <option value="idr">Indonesian Rupiah (IDR)</option>
+            <option value="php">Philippine Peso (PHP)</option>
+            <option value="pln">Polish Zloty (PLN)</option>
+            <option value="try">Turkish Lira (TRY)</option>
+            <option value="ils">Israeli Shekel (ILS)</option>
+            <option value="sar">Saudi Riyal (SAR)</option>
+            <option value="ngn">Nigerian Naira (NGN)</option>
+          </select>
+        </div>
+        <label for="toAmount" class="small-para">To:</label>
+        <div class="two flex">
+          <input type="text" id="toAmount" autocomplete="off" />
+          <hr />
+          <select id="toCurrency">
+            <option value="inr">Indian Rupee (INR)</option>
+            <option value="usd">US Dollar (USD)</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="gbp">British Pound (GBP)</option>
+            <option value="jpy">Japanese Yen (JPY)</option>
+            <option value="cny">Chinese Yuan (CNY)</option>
+            <option value="cad">Canadian Dollar (CAD)</option>
+            <option value="aud">Australian Dollar (AUD)</option>
+            <option value="chf">Swiss Franc (CHF)</option>
+            <option value="aed">UAE Dirham (AED)</option>
+            <option value="sgd">Singapore Dollar (SGD)</option>
+            <option value="nzd">New Zealand Dollar (NZD)</option>
+            <option value="hkd">Hong Kong Dollar (HKD)</option>
+            <option value="sek">Swedish Krona (SEK)</option>
+            <option value="nok">Norwegian Krone (NOK)</option>
+            <option value="dkk">Danish Krone (DKK)</option>
+            <option value="zar">South African Rand (ZAR)</option>
+            <option value="rub">Russian Ruble (RUB)</option>
+            <option value="brl">Brazilian Real (BRL)</option>
+            <option value="mxn">Mexican Peso (MXN)</option>
+            <option value="krw">South Korean Won (KRW)</option>
+            <option value="thb">Thai Baht (THB)</option>
+            <option value="myr">Malaysian Ringgit (MYR)</option>
+            <option value="idr">Indonesian Rupiah (IDR)</option>
+            <option value="php">Philippine Peso (PHP)</option>
+            <option value="pln">Polish Zloty (PLN)</option>
+            <option value="try">Turkish Lira (TRY)</option>
+            <option value="ils">Israeli Shekel (ILS)</option>
+            <option value="sar">Saudi Riyal (SAR)</option>
+            <option value="ngn">Nigerian Naira (NGN)</option>
+          </select>
+        </div>
+        <div id="displayCurrency" class="display"><p></p></div>
+      </div>
+      <div class="age-calculator">
+        <h3>
+          <img
+            src="https://m.media-amazon.com/images/I/41sIvI+zElL.png"
+            alt=" "
+          />
+          <p>&nbsp;Wellcome to your <span>Age Calculator</span></p>
+        </h3>
+        <label for="inputDOB" class="small-para"
+          >Enter Your Date of Birth:</label
+        >
+        <div class="dob">
+          <input type="date" id="inputDOB" />
+          <button id="CalculateDOB">Calculate</button>
+        </div>
+        <div id="displayDOB" class="display">
+          📊 Your Age is:<br />
+          <ul>
+            <li>Years: 0</li>
+            <li>Months: 0</li>
+            <li>Days: 0</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="flex">
+      <p>
+        A Currency Convertor, An Age Calculator | Prepared By Abhisek Dash | All
+        rights resevered &nbsp;&copy;2025
+      </p>
+    </footer>
+    <script>
+      // Curency Convertor
+      const fromAmount = document.getElementById("fromAmount");
+      const toAmount = document.getElementById("toAmount");
+      const fromCurrency = document.getElementById("fromCurrency");
+      const toCurrency = document.getElementById("toCurrency");
+      const display = document.getElementById("displayCurrency");
+
+      async function convertCurrency(amount, from, to) {
+        const apiUrl = `https://api.exchangerate-api.com/v4/latest/${from.toUpperCase()}`;
+        try {
+          const response = await fetch(apiUrl);
+          if (!response.ok)
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          const data = await response.json();
+          const rate = data.rates[to.toUpperCase()];
+          if (!rate) throw new Error(`Unable to find rate for ${to}`);
+          return (amount * rate).toFixed(2);
+        } catch (error) {
+          console.error("Error fetching exchange rates:", error);
+          return null;
+        }
+      }
+
+      fromAmount.addEventListener("input", async () => {
+        const amount = parseFloat(fromAmount.value);
+        if (isNaN(amount)) return;
+        const converted = await convertCurrency(
+          amount,
+          fromCurrency.value,
+          toCurrency.value
+        );
+        if (converted !== null) {
+          toAmount.value = converted;
+          display.textContent = `${amount} ${fromCurrency.value} = ${converted} ${toCurrency.value}`;
+        }
+      });
+
+      toAmount.addEventListener("input", async () => {
+        const amount = parseFloat(toAmount.value);
+        if (isNaN(amount)) return;
+        const converted = await convertCurrency(
+          amount,
+          toCurrency.value,
+          fromCurrency.value
+        );
+        if (converted !== null) {
+          fromAmount.value = converted;
+          display.textContent = `${amount} ${toCurrency.value} = ${converted} ${fromCurrency.value}`;
+        }
+      });
+
+      fromCurrency.addEventListener("change", () =>
+        toAmount.dispatchEvent(new Event("input"))
+      );
+      toCurrency.addEventListener("change", () =>
+        fromAmount.dispatchEvent(new Event("input"))
+      );
+    </script>
+    <script>
+      // AGE Calculator
+
+      const inputDOB = document.getElementById("inputDOB");
+      const calculateDOB = document.getElementById("CalculateDOB");
+      const displayDOB = document.querySelector("#displayDOB ul");
+
+      calculateDOB.addEventListener("click", () => {
+        const userDOB = new Date(inputDOB.value);
+        const today = new Date();
+        if (isNaN(userDOB.getTime())) {
+          alert("❌ Invalid Date! Please enter a valid date of birth.");
+          return;
+        }
+        let years;
+        let months;
+        let days;
+        if (today.getTime() > userDOB.getTime()) {
+          years = today.getFullYear() - userDOB.getFullYear();
+          months = today.getMonth() - userDOB.getMonth();
+          days = today.getDate() - userDOB.getDate();
+
+          if (days < 0) {
+            months--; // Borrow 1 month
+            const prevMonth = new Date(
+              today.getFullYear(),
+              today.getMonth(),
+              0
+            );
+            days += prevMonth.getDate();
+          }
+          if (months < 0) {
+            years--; // Borrow 1 year
+            months += 12;
+          }
+        } else {
+          alert("❌ Invalid Date! Please enter a valid date of birth.");
+          years = months = days = 0;
+        }
+        displayDOB.innerHTML = `<ul>
+              <li>Years: ${years}</li>
+              <li>Months: ${months}</li>
+              <li>Days: ${days}</li>
+            </ul>`;
+      });
+    </script>
+  </body>
+</html>
