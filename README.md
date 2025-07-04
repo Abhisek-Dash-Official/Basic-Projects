@@ -5,6 +5,4 @@ These projects were built before I even started college, demonstrating my curios
 
 This collection reflects my foundational journey into programming and lays the groundwork for more advanced projects I plan to build in the future.
 
-⭐ Skills demonstrated: HTML, CSS, JavaScript, Python, basic Git & GitHub.
-
-🛠️ More polished and advanced repositories will be added as I continue to grow as a developer.
+🛠️ More polished and advanced repositories will be NOT ADDED in this Repo as I continue to grow as a developer.
