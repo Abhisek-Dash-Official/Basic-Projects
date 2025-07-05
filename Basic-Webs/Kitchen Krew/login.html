@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - KitchenKrew</title>
+    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <section id="log-up-section" class="auth-section active">
+      <div class="flexbetween">
+        <div>
+          <h2>Login</h2>
+          <p>or <a href="#" id="go-signup">Create an account</a></p>
+        </div>
+        <img src="assets/images/img-for-login-file.png" alt="Login Image" />
+      </div>
+      <div class="input-div">
+        <label>Email: <input type="email" id="login-email" /></label>
+        <label
+          >Password: <input type="text" id="login-password" autocomplete="off"
+        /></label>
+        <button id="Login">Login</button>
+        <p id="login-error-msg"></p>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="sign-up-section" class="auth-section">
+      <div class="flexbetween">
+        <div>
+          <h2>Sign Up</h2>
+          <p>or <a href="#" id="go-logup">Already have an account? Login</a></p>
+        </div>
+        <img src="assets/images/img-for-login-file.png" alt="Signup Image" />
+      </div>
+      <div class="input-div">
+        <label>Email: <input type="email" id="sign-email" /></label>
+        <label
+          >Password: <input type="text" id="sign-password" autocomplete="off"
+        /></label>
+        <label
+          >Confirm Password:
+          <input type="text" id="confirm-password" autocomplete="off"
+        /></label>
+        <label>Full Name: <input type="text" id="sign-name" /></label>
+        <label>Phone: <input type="tel" id="sign-phone" /></label>
+        <label>Address Line: <input type="text" id="address-line" /></label>
+        <label>City: <input type="text" id="city" /></label>
+        <label>State: <input type="text" id="state" /></label>
+        <label>Pin Code: <input type="text" id="pin" /></label>
+        <label>Country: <input type="text" id="country" value="India" /></label>
+        <button id="signup">Sign Up</button>
+        <p id="signin-error-msg"></p>
+      </div>
+    </section>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

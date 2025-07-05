@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KitchenKrew</title>
+    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/sliders.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-topbar flexbetween">
+        <div id="hamburger">☰</div>
+        <div id="logo" class="flex">
+          <img src="assets/images/logo.png" alt="" />KitchenKrew
+        </div>
+        <button id="user-carts"><span id="cart-emoji">🛒 </span>Cart</button>
+      </div>
+      <nav id="desktop-navbar">
+        <a href="home.html">Home</a>
+        <a href="home.html#search-bar">Search</a>
+        <a href="home.html#menu">Menu</a>
+        <a href="home.html#offers">Offers</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="logout">Logout </a>
+      </nav>
+      <nav id="mobile-navbar">
+        <a href="home.html">Home</a>
+        <a href="home.html#search-bar">Search</a>
+        <a href="home.html#menu">Menu</a>
+        <a href="home.html#offers">Offers</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="logout">Logout </a>
+      </nav>
+    </header>
+    <main>
+      <div id="food-search">
+        <h2>Delicious Meals, Delivered Fast</h2>
+        <p>Order from top-rated premium restaurants near you.</p>
+        <div>
+          <input
+            type="text"
+            id="userLocation"
+            placeholder="Enter your Location"
+          />
+          <input
+            type="search"
+            id="search-bar"
+            placeholder="Search for food..."
+          />
+        </div>
+      </div>
+      <section id="slider-section">
+        <div id="prev-button" class="flex">
+          <div class="white flex">
+            <div class="ff5722 flex">
+              <div id="p1"></div>
+              <div id="p2"></div>
+            </div>
+          </div>
+        </div>
+        <div id="slider-wrapper">
+          <div id="slider">
+            <img class="slide" src="assets/images/slider-img1.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img2.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img3.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img4.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img5.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img6.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img7.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img8.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img9.jpg" alt=" " />
+            <img class="slide" src="assets/images/slider-img10.jpg" alt=" " />
+          </div>
+        </div>
+        <div id="next-button" class="flex">
+          <div class="white flex">
+            <div class="ff5722 flex">
+              <div id="n1"></div>
+              <div id="n2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2>What's on your mind?</h2>
+      <nav id="category-nav">
+        <a href="#bbqs"><img src="assets/images/bbqs.png" alt=" " />BBQS</a>
+        <a href="#best-foods"
+          ><img src="assets/images/best-foods.png" alt=" " />BEST FOODS</a
+        >
+        <a href="#breads"
+          ><img src="assets/images/bread.png" alt=" " />BREADS</a
+        >
+        <a href="#burger"
+          ><img src="assets/images/burger.png" alt=" " />BURGER</a
+        >
+        <a href="#chocolate"
+          ><img src="assets/images/chocolate.png" alt=" " />CHOCOLATE</a
+        >
+        <a href="#desserts"
+          ><img src="assets/images/desserts.png" alt=" " />DESSERTS</a
+        >
+        <a href="#drinks"
+          ><img src="assets/images/drinks.png" alt=" " />DRINKS</a
+        >
+        <a href="#fried-chicken"
+          ><img src="assets/images/fried-chicken.png" alt=" " />FRIED CHICKEN</a
+        >
+        <a href="#ice-cream"
+          ><img src="assets/images/ice-cream.png" alt=" " />ICE CREAM</a
+        >
+        <a href="#our-foods"
+          ><img src="assets/images/our-foods.png" alt=" " />OUR FOODS</a
+        >
+        <a href="#pizzas"
+          ><img src="assets/images/pizza.png" alt=" " />PIZZAS</a
+        >
+        <a href="#porks"><img src="assets/images/porks.png" alt=" " />PORKS</a>
+        <a href="#sandwich"
+          ><img src="assets/images/sandwich.png" alt=" " />SANDWICH</a
+        >
+        <a href="#sausages"
+          ><img src="assets/images/sausages.png" alt=" " />SAUSAGES</a
+        >
+        <a href="#steaks"
+          ><img src="assets/images/steaks.png" alt=" " />STEAKS</a
+        >
+      </nav>
+
+      <h2>🔥 Top Trending Eats (Trendings)</h2>
+      <section id="trending-section" class="flex">
+        <div id="trending-container">
+          <div class="trending-card">
+            <img
+              src="https://content.jdmagicbox.com/comp/mahabubnagar/d8/9999p8542.8542.230414020404.i7d8/catalogue/domino-s-pizza-srinivasa-colony-mahabubnagar-pizza-outlets-pwWSvbo1IO.jpg"
+            />
+            <h3>Non-Veg Supreme Pizza</h3>
+            <p>Meat-loaded Domino’s special</p>
+            <span class="price"><s>₹499</s> <strong>₹449</strong></span>
+            <span class="discount">(10% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/040/703/949/small/ai-generated-royal-feast-master-the-art-of-chicken-biryani-at-home-generative-ai-photo.jpg"
+            />
+            <h3>Chicken Biryani</h3>
+            <p>India’s evergreen rice delicacy</p>
+            <span class="price"><s>₹300</s> <strong>₹249</strong></span>
+            <span class="discount">(17% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd6eyEkY3-9eJrLDyW7TBIooJiOO2i6nAEUg&s"
+            />
+            <h3>Dalma (Odisha)</h3>
+            <p>Hearty lentil-veggie stew</p>
+            <span class="price"><s>₹180</s> <strong>₹150</strong></span>
+            <span class="discount">(17% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://images.timesfoodie.com/photo/msid-112956165,thumbsize-1089867/112956165.jpg"
+            />
+            <h3>Veg Cheese Burger</h3>
+            <p>Melty delight from Burger King</p>
+            <span class="price"><s>₹150</s> <strong>₹119</strong></span>
+            <span class="discount">(21% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/024/748/761/small/grilled-meat-and-french-fries-a-classic-american-lunch-bar-generated-by-ai-free-photo.jpg"
+            />
+            <h3>Peri Peri Fries</h3>
+            <p>Crispy spiced fries</p>
+            <span class="price"><s>₹120</s> <strong>₹99</strong></span>
+            <span class="discount">(17% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://spoonsofflavor.com/wp-content/uploads/2020/11/White-Matar-Chaat.jpg"
+            />
+            <h3>Ghughuni Chaat (Odisha)</h3>
+            <p>Spiced yellow peas snack</p>
+            <span class="price"><s>₹120</s> <strong>₹90</strong></span>
+            <span class="discount">(25% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXaGm9Q2yewiSHkXDgf5jpIqBFipfz2kwtCA&s"
+            />
+            <h3>Momoz Bucket</h3>
+            <p>Steamed, saucy, spicy!</p>
+            <span class="price"><s>₹220</s> <strong>₹185</strong></span>
+            <span class="discount">(16% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xwE4fQM6Bm22gK81MRhFaRoVLcuFMHSjcA&s"
+            />
+            <h3>Pakhala Bhaat (Odisha)</h3>
+            <p>Fermented rice cooling dish</p>
+            <span class="price"><s>₹130</s> <strong>₹99</strong></span>
+            <span class="discount">(24% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://www.bigbasket.com/media/uploads/recipe/w-l/4570_2_1.jpg"
+            />
+            <h3>Chhena Poda (Odisha)</h3>
+            <p>Baked cheese dessert</p>
+            <span class="price"><s>₹200</s> <strong>₹165</strong></span>
+            <span class="discount">(17% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://t4.ftcdn.net/jpg/00/77/46/41/360_F_77464124_lKw5yJuFRbxlk5JfsEqX2NXYhvjHQcX2.jpg"
+            />
+            <h3>Chicken Nuggets</h3>
+            <p>Golden crispy bites</p>
+            <span class="price"><s>₹180</s> <strong>₹149</strong></span>
+            <span class="discount">(17% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img
+              src="https://t4.ftcdn.net/jpg/08/69/70/01/360_F_869700148_tC8E28vJJt4b6m8IHZgA2Ilcze0pZEmk.jpg"
+            />
+            <h3>Chocolate Lava Cake</h3>
+            <p>Domino’s signature dessert</p>
+            <span class="price"><s>₹129</s> <strong>₹99</strong></span>
+            <span class="discount">(23% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img src="https://i.ytimg.com/vi/kUdIhifyJYg/sddefault.jpg" />
+            <h3>Spicy Paneer Burger</h3>
+            <p>McD’s zingy vegetarian hero</p>
+            <span class="price"><s>₹169</s> <strong>₹139</strong></span>
+            <span class="discount">(18% OFF)</span>
+          </div>
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMrhvqyv--13szpPs1jocsLaYJHvpdjSbFg&s"
+            />
+            <h3>Kanika Rice (Odisha)</h3>
+            <p>Sweet ghee-flavored rice</p>
+            <span class="price"><s>₹150</s> <strong>₹125</strong></span>
+            <span class="discount">(16% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tXNH_xCEYOU9wjkNFLKfCHUf1mvc8QmR4g&s"
+            />
+            <h3>Masala Dosa</h3>
+            <p>Classic South Indian crisp</p>
+            <span class="price"><s>₹140</s> <strong>₹110</strong></span>
+            <span class="discount">(21% OFF)</span>
+          </div>
+
+          <div class="trending-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbUsPc6SxnvvBpxB5ebfNOGpbUGCobwNtpfA&s"
+            />
+            <h3>Sushi Platter</h3>
+            <p>Global gourmet sensation</p>
+            <span class="price"
+              ><s>₹799</s> <strong>₹649</strong>
+              <span class="discount">(19% OFF)</span></span
+            >
+          </div>
+        </div>
+      </section>
+      <h2>🧑‍🍳 Best Bites Around the City (Restaurants)</h2>
+      <section id="restaurants-section" class="flex">
+        <div id="restaurants-container">
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu59i2hCCzQSSjlEumEN5yEV4c9zebv8Q_2A&s"
+            />
+            <h3>Truptee Restaurant</h3>
+            <p>Famous Odia Thali & Veg Meals</p>
+            <span class="price">₹299 for 2</span>
+            <span class="discount">(15% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxV_w6Sw36851XvGTbzp25XcTqds-rtxEgA&s"
+            />
+            <h3>Behrouz Biryani</h3>
+            <p>Royal Biryani with Secret Spices</p>
+            <span class="price">₹550 for 2</span>
+            <span class="discount">(25% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FgHYjTAGP0-rSZTEpR3W1as7xZstZ1VNnQ&s"
+            />
+            <h3>Dhauli Heritage Dhaba</h3>
+            <p>Authentic Odia Cuisine & Desi Flavors</p>
+            <span class="price">₹350 for 2</span>
+            <span class="discount">(10% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dUQkAc1SCzEN-4szlljhB76ef4nOWIYdYA&s"
+            />
+            <h3>BBQ Nation</h3>
+            <p>Grill Buffets & Live Counters</p>
+            <span class="price">₹1200 for 2</span>
+            <span class="discount">(20% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://content3.jdmagicbox.com/comp/bhubaneshwar/a3/0674px674.x674.160719124157.p6a3/catalogue/odisha-hotel-sahid-nagar-bhubaneshwar-oriya-restaurants-kfs2pqqo6z.jpg"
+            />
+            <h3>Odisha Hotel, Bhubaneswar</h3>
+            <p>Spicy Macha Besara & Pokhala</p>
+            <span class="price">₹399 for 2</span>
+            <span class="discount">(12% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMn3bI5lG-DEjb89-vnMd0N-VLxocPddTKPQ&s"
+            />
+            <h3>Punjab Grill</h3>
+            <p>Luxury North Indian Platters</p>
+            <span class="price">₹800 for 2</span>
+            <span class="discount">(30% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb28wzBiUfzGguHtIh6IaSpaRzBhyNlCy8Xw&s"
+            />
+            <h3>The Zaika, Cuttack</h3>
+            <p>Modern Twist on Odia Recipes</p>
+            <span class="price">₹320 for 2</span>
+            <span class="discount">(18% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://www.shutterstock.com/image-photo/ottawa-canada-may-11-2023-600nw-2480623481.jpg"
+            />
+            <h3>Domino’s Pizza</h3>
+            <p>Cheesy & Crunchy Supreme Combos</p>
+            <span class="price">₹499 for 2</span>
+            <span class="discount">(20% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT68PYbF_rZeY77uGIhgXWIyjlXgA3tgn2oUA&s"
+            />
+            <h3>Mainland China</h3>
+            <p>Authentic Oriental & Dim Sum</p>
+            <span class="price">₹1100 for 2</span>
+            <span class="discount">(22% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmp5VKq2F4QDOjY6dvBYcH340VhEi-fk0YAA&s"
+            />
+            <h3>Sai Bhog, Puri</h3>
+            <p>Puris, Dalma & Temple-style Meals</p>
+            <span class="price">₹270 for 2</span>
+            <span class="discount">(10% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJsHTAEPWKT2dqDshMrY7x4a8jzb2EBkE9QFpYakensExO1rYfTUu-fPvFF87pt8H8lSk&usqp=CAU"
+            />
+            <h3>Pizza Hut</h3>
+            <p>Pan Pizzas with Desi Toppings</p>
+            <span class="price">₹429 for 2</span>
+            <span class="discount">(15% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7d8NcNh_e7hzvjKfeZjudZAiLmTVymReew&s"
+            />
+            <h3>Wow! Momo</h3>
+            <p>Fusion Momos & Sizzlers</p>
+            <span class="price">₹399 for 2</span>
+            <span class="discount">(10% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSub-qXEEDPx9tx9n4FePQkZqfw7fpL8DIBew&s"
+            />
+            <h3>WTF Bhubaneswar</h3>
+            <p>Snacks, Shakes & Youth Vibes</p>
+            <span class="price">₹299 for 2</span>
+            <span class="discount">(8% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjD7wm0Oeyq0Pt_KpdrseXXHFyStr9dNLyoQ&s"
+            />
+            <h3>Leon's Burgers</h3>
+            <p>Juicy American-style Burgers</p>
+            <span class="price">₹350 for 2</span>
+            <span class="discount">(25% OFF)</span>
+          </div>
+
+          <div class="restaurant-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYR4b9criBdAMFjq06AkexwL3-AXo07Wi0AJhjmq7W3QUNBHKw7MHIHSGfM5zXhkGgads&usqp=CAU"
+            />
+            <h3>Giani’s Ice Cream</h3>
+            <p>Thick Shakes & Real Fruit Sundaes</p>
+            <span class="price">₹250 for 2</span>
+            <span class="discount">(30% OFF)</span>
+          </div>
+        </div>
+      </section>
+      <h2>🎁 Hot Deals You Can’t Miss (Offers)</h2>
+      <section id="offers" class="flex">
+        <div id="offers-container">
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdqQrVqlNHxR1mnJvr6U6G5G6qWNko2CyTqwEEtbq-7SpYMqldoUN3xVukYCbNyphLuc&usqp=CAU"
+            />
+            <h3>Domino’s Mega Feast</h3>
+            <p>Buy 1 Pizza, Get 1 Free (Medium or Large)</p>
+            <span class="price">₹499 for 2</span>
+            <span class="discount">(FLAT 50% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3srYEc4gory9KN5ISWgfnf0FTja7xeNZGOA&s"
+            />
+            <h3>Barbeque Nation Lunch Deal</h3>
+            <p>Unlimited Buffet with Free Mocktails</p>
+            <span class="price">₹749 per person</span>
+            <span class="discount">(FLAT 30% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dVWN4brxpR21zAnUn1Mx6gpaW2EQ3gLTsQ&s"
+            />
+            <h3>Behrouz Biryani Celebration Combo</h3>
+            <p>Get 2 Royal Biryani Bowls + Dessert</p>
+            <span class="price">₹699 combo</span>
+            <span class="discount">(FLAT 25% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSShm1U1X5FyoYLNworxyvdw37EGb_w_Bq1YQ&s"
+            />
+            <h3>Pizza Hut Festival Box</h3>
+            <p>2 Pizzas + Garlic Bread + Pepsi</p>
+            <span class="price">₹599 combo</span>
+            <span class="discount">(FLAT 50% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mQeth4Oxmm8xfiLJE_xlk_RUbGa_GHtUyw&s"
+            />
+            <h3>WTF Bhubaneswar Student Combo</h3>
+            <p>Cheese Burger + Fries + Cold Coffee</p>
+            <span class="price">₹229 only</span>
+            <span class="discount">(FLAT 35% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://lh3.googleusercontent.com/26xwYsWSeqQs_HtnODGqHly_Tfs4kk5pUL5kattjrfJhIvEWFIb0-BJCy8cxhH1utLyok-sWV1JecnGVHByZFn-xwF1FbnNXrDqSREM=s750"
+            />
+            <h3>Leon's Double Trouble</h3>
+            <p>2 Chicken Burgers + Cheese Dip</p>
+            <span class="price">₹399</span>
+            <span class="discount">(FLAT 20% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1d7fVVYT1ppYjD8sFDKjmqwUMvGn_igSXQ&s"
+            />
+            <h3>Wow! Momo Momo-Thon</h3>
+            <p>Get 10 Momos + 1 Free Tandoori Platter</p>
+            <span class="price">₹350</span>
+            <span class="discount">(FLAT 30% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDxIt--5MGiA-0SfufTpfMHA0pvSF2TCnOgQ&s"
+            />
+            <h3>Mainland China Couple Delight</h3>
+            <p>Meal for 2 with Starter + Main Course</p>
+            <span class="price">₹899</span>
+            <span class="discount">(FLAT 25% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3SBAfY0zpNfb4qYpzpTqp4FzfjKhfV9KJQ&s"
+            />
+            <h3>Keventers Cold Combo</h3>
+            <p>Buy 1 Thick Shake, Get 1 at ₹1</p>
+            <span class="price">₹240</span>
+            <span class="discount">(FLAT 50% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw30X0_c50kMVxOcfM0a7twAKkeff72u5wPQ&s"
+            />
+            <h3>Truptee Veg Thali Offer</h3>
+            <p>Full Veg Thali with Dessert</p>
+            <span class="price">₹199</span>
+            <span class="discount">(FLAT 10% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img src="https://i.ytimg.com/vi/jSL8TDajefY/sddefault.jpg" />
+            <h3>Sai Bhog Temple Meal</h3>
+            <p>Authentic Odia Temple Combo</p>
+            <span class="price">₹250</span>
+            <span class="discount">(FLAT 12% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://content.jdmagicbox.com/comp/jaipur/r4/0141px141.x141.220218132840.u5r4/catalogue/-dk06ugnpxb.jpg"
+            />
+            <h3>Giani’s Ice Cream Festival</h3>
+            <p>3 Scoops + 1 Free Sundae</p>
+            <span class="price">₹299</span>
+            <span class="discount">(FLAT 35% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFP9sOaYVu6SUV1lL9SaX_j2I5Ri15GdvDZg&s"
+            />
+            <h3>Biryani Blues Weekend Deal</h3>
+            <p>2 Hyderabadi Biryani Boxes + Raita</p>
+            <span class="price">₹579</span>
+            <span class="discount">(FLAT 28% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbQYZ2178o6sFzGqjk5dzY_M2d68CaXVHmnA&s"
+            />
+            <h3>The Zaika Special Combo</h3>
+            <p>Odia Fusion Meal for 2</p>
+            <span class="price">₹349</span>
+            <span class="discount">(FLAT 15% OFF)</span>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC5K3pfsWF4kfqzNfNuJszZeKCh8PrpphMYYHhPzGmPBHs80jEUOtB8QqVxOIkx1ZIsck&usqp=CAU"
+            />
+            <h3>Amritsari Express North Feast</h3>
+            <p>Paratha Thali + Lassi + Dessert</p>
+            <span class="price">₹399</span>
+            <span class="discount">(FLAT 20% OFF)</span>
+          </div>
+        </div>
+      </section>
+      <h2>🍽️ Explore Epic Menus Now</h2>
+      <section id="menu">
+        <h2>🍖 BBQS</h2>
+        <section id="bbqs" class="category-grids"></section>
+        <h2>🥗 Best Foods</h2>
+        <section id="best-foods" class="category-grids"></section>
+        <h2>🥖 Breads</h2>
+        <section id="breads" class="category-grids"></section>
+        <h2>🍔 Burger</h2>
+        <section id="burger" class="category-grids"></section>
+        <h2>🍫 Chocolate</h2>
+        <section id="chocolate" class="category-grids"></section>
+        <h2>🍨 Desserts</h2>
+        <section id="desserts" class="category-grids"></section>
+        <h2>🍹 Drinks</h2>
+        <section id="drinks" class="category-grids"></section>
+        <h2>🍗 Fried Chicken</h2>
+        <section id="fried-chicken" class="category-grids"></section>
+        <h2>🍦 Ice Cream</h2>
+        <section id="ice-cream" class="category-grids"></section>
+        <h2>🍱 Our Foods</h2>
+        <section id="our-foods" class="category-grids"></section>
+        <h2>🍕 Pizzas</h2>
+        <section id="pizzas" class="category-grids"></section>
+        <h2>🥓 Porks</h2>
+        <section id="porks" class="category-grids"></section>
+        <h2>🥪 Sandwich</h2>
+        <section id="sandwich" class="category-grids"></section>
+        <h2>🌭 Sausages</h2>
+        <section id="sausages" class="category-grids"></section>
+        <h2>🥩 Steaks</h2>
+        <section id="steaks" class="category-grids"></section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>KitchenKrew</h3>
+          <p>
+            Delivering quality meals across Odisha with passion and precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#menu">Menu</a></li>
+            <li><a href="home.html#offers">Offers</a></li>
+            <li><a href="support.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html#privacy-policy">Privacy Policy</a></li>
+            <li>
+              <a href="terms.html#terms-conditions">Terms & Conditions</a>
+            </li>
+            <li><a href="terms.html#refund-policy">Refund Policy</a></li>
+            <li><a href="terms.html#delivery-info">Delivery Info</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html#help-center">Help Center</a></li>
+            <li><a href="support.html#chat-with-us">Chat with Us</a></li>
+            <li><a href="support.html#feedback">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="YouTube"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 KitchenKrew. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      window.onload = () => {
+        if (!localStorage.isLoggedIn) {
+          window.location.href = "login.html";
+        }
+      };
+      document.querySelectorAll(".logout").forEach((element) => {
+        element.addEventListener("click", () => {
+          localStorage.setItem("isLoggedIn", false);
+          window.location.href = "login.html";
+        });
+      });
+      document.getElementById("hamburger").addEventListener("click", () => {
+        const mobNav = document.getElementById("mobile-navbar");
+        mobNav.style.display =
+          mobNav.style.display === "flex" ? "none" : "flex";
+      });
+      document.getElementById("user-carts").addEventListener("click", () => {
+        window.location.href = "wishlist.html";
+      });
+    </script>
+    <script src="js/sliders.js"></script>
+    <script src="js/render.js"></script>
+  </body>
+</html>

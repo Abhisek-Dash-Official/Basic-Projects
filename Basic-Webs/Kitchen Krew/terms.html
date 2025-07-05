@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions - KitchenKrew</title>
+    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/terms-conditions.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-topbar flexbetween">
+        <div id="hamburger">☰</div>
+        <div id="logo" class="flex">
+          <img src="assets/images/logo.png" alt="" />KitchenKrew
+        </div>
+        <button id="user-carts"><span id="cart-emoji">🛒 </span>Cart</button>
+      </div>
+      <nav id="desktop-navbar">
+        <a href="home.html">Home</a>
+        <a href="home.html#search-bar">Search</a>
+        <a href="home.html#menu">Menu</a>
+        <a href="home.html#offers">Offers</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="logout">Logout </a>
+      </nav>
+      <nav id="mobile-navbar">
+        <a href="home.html">Home</a>
+        <a href="home.html#search-bar">Search</a>
+        <a href="home.html#menu">Menu</a>
+        <a href="home.html#offers">Offers</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="support.html">Support</a>
+        <a href="#" class="logout">Logout </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Privacy Policy -->
+      <section id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p>
+          We are committed to protecting your personal information. Your data is
+          stored securely and used only to enhance your shopping experience.
+        </p>
+        <ul>
+          <li>We never sell your data to third parties.</li>
+          <li>Your payment info is encrypted and secure.</li>
+          <li>You can request deletion of your data anytime.</li>
+        </ul>
+      </section>
+
+      <!-- Terms & Conditions -->
+      <section id="terms-conditions">
+        <h2>Terms & Conditions</h2>
+        <p>
+          By using our website, you agree to our terms and policies. Please read
+          them carefully.
+        </p>
+        <ul>
+          <li>Users must be 13 years or older to make a purchase.</li>
+          <li>Orders placed are subject to availability and confirmation.</li>
+          <li>
+            We reserve the right to cancel any order without prior notice.
+          </li>
+          <li>Prices and product details may change without notice.</li>
+        </ul>
+      </section>
+
+      <!-- Refund Policy -->
+      <section id="refund-policy">
+        <h2>Refund Policy</h2>
+        <p>We offer refunds under certain conditions. Here's how it works:</p>
+        <ul>
+          <li>Refunds are eligible within 7 days of delivery.</li>
+          <li>Product must be unused and in original condition.</li>
+          <li>Digital goods are non-refundable.</li>
+          <li>Refunds will be processed within 5-7 business days.</li>
+        </ul>
+      </section>
+
+      <!-- Delivery Info -->
+      <section id="delivery-info">
+        <h2>Delivery Information</h2>
+        <p>We offer fast and reliable delivery services across India.</p>
+        <ul>
+          <li>Delivery time: 2–5 business days in most areas.</li>
+          <li>Remote areas may take longer.</li>
+          <li>Real-time tracking is available post-shipment.</li>
+          <li>Free delivery on orders above ₹499.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>KitchenKrew</h3>
+          <p>
+            Delivering quality meals across Odisha with passion and precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#menu">Menu</a></li>
+            <li><a href="home.html#offers">Offers</a></li>
+            <li><a href="support.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html#privacy-policy">Privacy Policy</a></li>
+            <li>
+              <a href="terms.html#terms-conditions">Terms & Conditions</a>
+            </li>
+            <li><a href="terms.html#refund-policy">Refund Policy</a></li>
+            <li><a href="terms.html#delivery-info">Delivery Info</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html#help-center">Help Center</a></li>
+            <li><a href="support.html#chat-with-us">Chat with Us</a></li>
+            <li><a href="support.html#feedback">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                alt="YouTube"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 KitchenKrew. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      window.onload = () => {
+        if (!localStorage.isLoggedIn) {
+          window.location.href = "login.html";
+        }
+      };
+      document.querySelectorAll(".logout").forEach((element) => {
+        element.addEventListener("click", () => {
+          localStorage.setItem("isLoggedIn", false);
+          window.location.href = "login.html";
+        });
+      });
+      document.getElementById("hamburger").addEventListener("click", () => {
+        const mobNav = document.getElementById("mobile-navbar");
+        mobNav.style.display =
+          mobNav.style.display === "flex" ? "none" : "flex";
+      });
+      document.getElementById("user-carts").addEventListener("click", () => {
+        window.location.href = "wishlist.html";
+      });
+    </script>
+  </body>
+</html>

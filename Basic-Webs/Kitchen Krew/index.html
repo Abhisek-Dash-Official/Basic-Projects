@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KitchenKrew</title>
+    <link rel="icon" href="assets/images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100vh;
+        width: 100vw;
+        background: #d5dbdb;
+      }
+
+      .vehicle-container img {
+        position: absolute;
+        bottom: 25vh;
+        left: 0;
+        height: 40vh;
+        animation: move 1s linear 1;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateX(-20vw);
+        }
+        25% {
+          transform: translateX(40vw);
+        }
+        100% {
+          transform: translateX(120vw);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .vehicle-container img {
+          height: 40vh;
+          bottom: 30vh;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .vehicle-container img {
+          height: 30vh;
+          bottom: 40vh;
+        }
+      }
+      p {
+        font-weight: 800;
+        font-size: 4rem;
+        font-family: "Lobster";
+        width: 100vw;
+        padding-top: 7vh;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>KitchenKrew</p>
+    <div class="vehicle-container">
+      <img src="assets/images/vehicle.png" alt="Vehicle" />
+    </div>
+    <script>
+      setTimeout(() => {
+        if (localStorage.isLoggedIn) {
+          window.location.href = "home.html";
+        } else {
+          window.location.href = "login.html";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
