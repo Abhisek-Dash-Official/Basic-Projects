@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperArena</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/webP" href="IMAGES/favicon.webP" />
+  </head>
+  <body>
+    <header class="flex">
+      <div class="emoji flex">🎮</div>
+      <h1>Rock-Paper-Arena</h1>
+      <div class="emoji flex">⚔️</div>
+    </header>
+
+    <h2>👆 Tap an Image to Choose!</h2>
+    <div class="choices flex">
+      <div id="rock"><img src="IMAGES/rock.png" alt="Rock" /></div>
+      <div id="paper"><img src="IMAGES/paper.png" alt="Paper" /></div>
+      <div id="scissors"><img src="IMAGES/scissors.png" alt="Scissors" /></div>
+    </div>
+
+    <div id="status" class="flex">
+      YOU:
+      <div class="emoji flex">❔</div>
+      VS COMP:
+      <div class="emoji flex">❔</div>
+    </div>
+
+    <div id="score" class="flex">You: 0 | Comp: 0</div>
+
+    <div id="msg-box" class="flex"><p id="msg">Play your move!</p></div>
+    <script src="script.js"></script>
+  </body>
+</html>
